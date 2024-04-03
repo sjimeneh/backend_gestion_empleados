@@ -36,7 +36,6 @@ public class Employee {
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "jonposition_id")
-    @Column(nullable = false)
     private JobPosition jobPosition;
 
 }

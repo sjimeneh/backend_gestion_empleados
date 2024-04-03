@@ -1,5 +1,6 @@
 package com.castor.gestionempleados.entity;
 
+import com.castor.gestionempleados.entity.Enum.JobPositionType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -19,5 +20,6 @@ public class JobPosition {
     private Long id;
 
     @Column(length = 100,nullable = false)
-    private String name;
+    @Enumerated(EnumType.STRING)
+    private JobPositionType name;
 }
