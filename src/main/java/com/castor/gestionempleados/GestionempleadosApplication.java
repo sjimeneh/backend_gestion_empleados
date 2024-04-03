@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class GestionempleadosApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(GestionempleadosApplication.class, args);
 	}
 
