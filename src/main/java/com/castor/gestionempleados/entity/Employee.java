@@ -38,4 +38,7 @@ public class Employee {
     @JoinColumn(name = "jonposition_id")
     private JobPosition jobPosition;
 
+    @Lob
+    private byte[] dataImage;
+
 }
